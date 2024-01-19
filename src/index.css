@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "PlusJakartaSans-Medium";
+  src: url(./assets/PlusJakartaSans-Medium.ttf);
+}
+
+* {
+  font-family: PlusJakartaSans-Medium; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: .5s;
+}
+
+a:hover {
+  color: #7ED957;
+}
+
+nav#navbar {
+  padding-bottom: 20px;
+  border-bottom: solid 1px #7ED957;
+  justify-content: space-between;
+  display: flex;
+  padding-left: 57px;
+  padding-top: 22px;
+}
+
+.containernav {
+  border-radius: 7px;
+  display: flex;
+  background-color: white;
+  width: 11%;
+  padding: 11px;
+  margin-right: 18rem;
+}
+
+input.pesquisa {
+  background-color: transparent;
+  width: 100%;
+  border-radius: 7px;
+  border: none;
+}
+
+h2.logo {
+  margin-left: 6rem;
+}
+
+button.butaopesq {
+  cursor: pointer;
+  color: black;
+  font-size: 19px;
+  border: none;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7ED957;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+form {
+  display: flex;
+}
+
+@media screen and (max-width: 425px) {
+  .moviecard {
+    width: 51%;
+  }
+
+  .inforow {
+    width: 58%;
+  }
+
+  nav#navbar {
+    padding-left: 0px !important;
+  }
+
+  .containernav {
+    width: 46%;
+    padding: 12px;
+    margin-right: 4rem;
+  }
+}
